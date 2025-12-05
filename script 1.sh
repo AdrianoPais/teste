@@ -156,9 +156,7 @@ cd /var/www
 rm -f prestashop.zip
 rm -rf prestashop
 
-wget --user-agent="Mozilla/5.0" \
-  -O prestashop.zip \
-  https://github.com/PrestaShop/PrestaShop/releases/latest/download/prestashop.zip
+wget -O prestashop.zip https://github.com/PrestaShop/PrestaShop/releases/download/8.1.7/prestashop_8.1.7.zip
 
 # Validar ZIP
 if ! file prestashop.zip | grep -qi 'Zip archive'; then
